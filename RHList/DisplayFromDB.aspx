@@ -6,7 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Display DB Data</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -15,7 +15,8 @@
         <telerik:RadButton ID="RadButtonShowData" runat="server" Text="Display Data" OnClick="RadButtonShowData_Click"></telerik:RadButton>
     </div>
     <div>
-        <telerik:RadGrid ID="RadGrid1" runat="server"></telerik:RadGrid>
+        <telerik:RadGrid ID="RadGrid1" runat="server" Width="537px">
+        </telerik:RadGrid>
     </div>
     </form>
 </body>
