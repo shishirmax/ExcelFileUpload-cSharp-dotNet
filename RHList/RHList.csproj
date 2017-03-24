@@ -110,10 +110,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DisplayFromDB.aspx" />
     <Content Include="UploadRHFromExcel.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DisplayFromDB.aspx.cs">
+      <DependentUpon>DisplayFromDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayFromDB.aspx.designer.cs">
+      <DependentUpon>DisplayFromDB.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UploadRHFromExcel.aspx.cs">
       <DependentUpon>UploadRHFromExcel.aspx</DependentUpon>
