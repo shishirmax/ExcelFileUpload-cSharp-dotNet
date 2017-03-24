@@ -21,7 +21,7 @@ namespace RHList
             SqlConnection con = new SqlConnection();
             con.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from RH_List", con);
+            SqlCommand cmd = new SqlCommand("select RH_ID,RH_Name,format(RH_Date,'dd-MMMM-yyyy') as RH_Date from RH_List", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
